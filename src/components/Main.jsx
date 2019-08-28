@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Main = () => (
   <div className="main">
-    <ol>
+    <ol data-testid="news-list">
       <li>Lorem Ipsum</li>
       <li>Lorem Ipsum</li>
     </ol>
