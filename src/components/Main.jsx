@@ -1,10 +1,11 @@
 import React from "react";
 
-const Main = () => (
+const Main = ({ stories }) => (
   <div className="main">
     <ol data-testid="news-list">
-      <li>Lorem Ipsum</li>
-      <li>Lorem Ipsum</li>
+      {stories.map(({ id, title }) => (
+        <li key={id}>{title}</li>
+      ))}
     </ol>
   </div>
 );
